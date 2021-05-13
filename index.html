@@ -6,38 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      #main {
+      .main {
         position: relative;
       }
-      canvas {
+      #canvas {
         position: absolute;
       }
     </style>
   </head>
   <body>
-    <div class="wrap">
+    <div>
       <div class="main">
         <canvas id="canvas"></canvas>
         <video
-          src="The next outbreak we are not ready.mp4"
+          src="./lyj.mp4"
           id="video"
           controls
-          width="710"
-          height="400"
+          width="850"
+          height="480"
         ></video>
       </div>
       <div class="content">
         <input type="text" id="text" />
-        <input type="button" value="sent barrage" id="btn" />
+        <input type="button" id="btn" value="发送弹幕" />
         <input type="color" id="color" />
         <input type="range" id="range" max="40" min="20" />
       </div>
     </div>
-
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
